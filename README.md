@@ -33,14 +33,12 @@ The saved model can be reloaded for inference or further fine-tuning using `Fast
 
 ## Diagram: Fine-Tuning Workflow
 
-```mermaid
 flowchart TD;
     A[Load Pretrained Model (Unsloth LLaMA-3 8B)] --> B[Prepare Alpaca Format Dataset];
     B --> C[Configure Training Parameters];
     C --> D[Fine-Tune Model Using FastLanguageModel and SFTTrainer];
     D --> E[Evaluate and Test Model];
     E --> F[Deploy or Further Fine-Tune]
-```
 
 ## Acknowledgments
 - [Unsloth](https://github.com/unslothai/unsloth) for optimizing LLaMA fine-tuning.
